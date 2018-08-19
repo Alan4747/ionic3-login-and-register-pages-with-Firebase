@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth'; 
+import { HomePage } from '../home/home';
+import { RegisterPage } from '../register/register';
 
 
 /**
@@ -19,7 +21,9 @@ export class LoginPage {
   email:string='';
   password:string='';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public afAuth:AngularFireAuth) {
+    constructor(public navCtrl: NavController,
+                public navParams: NavParams,
+                public afAuth:AngularFireAuth) {
   }
 
   ionViewDidLoad() {
@@ -33,8 +37,11 @@ export class LoginPage {
     }).catch(error =>{
       console.error(error);
     });
-    this.navCtrl.setRoot('WelcomePage');
-
+    this.navCtrl.setRoot(HomePage);
+ 
+  }
+  register(){
+    this.navCtrl.setRoot(RegisterPage);
   }
 
 }

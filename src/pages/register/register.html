@@ -6,38 +6,61 @@
 -->
 <ion-header>
 
-  <ion-navbar color="secondary" hideBackbutton>
-    <ion-title>Signup</ion-title>
+  <ion-navbar color='nvbrgreen'>
+    <ion-title>Register</ion-title>
   </ion-navbar>
 
 </ion-header>
 
+<ion-content padding center text-center style="background-image: url('assets/imgs/greenidea.jpg');
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center center;">
+                            
+  
+                            <br/><br/><br/><br/><br/><br/>
 
-<ion-content padding>
-  <ion-list>
-    <ion-item>
-      <ion-label floating color="dark" text-left>User Name</ion-label>
-      <ion-input  type="text" name="name" [(ngModel)]="data.name"></ion-input>
-    </ion-item>
-    <ion-item>
-        <ion-label floating color="dark" text-left>Email</ion-label>
-        <ion-input  type="email" name="email" [(ngModel)]="data.email"></ion-input>
-      </ion-item>
-      <ion-item>
-          <ion-label floating color="dark" text-left>Password</ion-label>
-          <ion-input  type="password" name="password" [(ngModel)]="data.password"></ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-label floating color="dark" text-left>Phone Number</ion-label>
-            <ion-input  type="number" name="number" [(ngModel)]="data.phoneNumber"></ion-input>
-          </ion-item>
-          <ion-item>
-              <ion-label floating color="dark" text-left>Address</ion-label>
-              <ion-input  type="text" name="address" [(ngModel)]="data.address"></ion-input>
+
+
+         <img src="assets/imgs/lemon(2).png" alt=""/>
+
+
+  
+        <ion-list > 
+          <br/><br/><br/>
+          
+            <ion-item  class="inputs">
+              <ion-label fixed style="color: antiquewhite" >Full Name</ion-label>
+              <ion-input type="text" [(ngModel)]="data.name" ></ion-input>
             </ion-item>
-  </ion-list>
-  <div padding>
-    <button ion-button color="primary" block (click)="signup()">Signup</button>
-  </div>
+            
+          <ion-item fixed class="inputs" >
+              <ion-label style="color: antiquewhite" >E-mail</ion-label>
+              <ion-input type="text" [(ngModel)]="data.email" ></ion-input>
+            </ion-item>
+            
+            <ion-item  class="inputs">
+              <ion-label fixed style="color: antiquewhite">Password</ion-label>
+              <ion-input type="password" [(ngModel)]="data.password" ></ion-input>
+            </ion-item>
+            
+            <ion-item  class="inputs">
+              <ion-label  style="color: antiquewhite">Confirm Password</ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
 
+            <br/><br/>
+        
+          <div class="forgettext" >
+            <button ion-button color="secondary" outline class="ion-button" class="hizabutton" (click)="signup()" >Sign up</button>
+          </div>
+      <br/><br/>
+ 
+              <p class="forgotpassword">Have an account?<a (clic)="login()" ><b style="color: #154e17 ">Log in</b></a></p>
+       
+          </ion-list>
+ 
+       
 </ion-content>
+
+

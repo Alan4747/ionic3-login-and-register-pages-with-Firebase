@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth'; 
 import { AngularFireList,AngularFireDatabase } from 'angularfire2/database';
+import { HomePage } from '../home/home';
+import { LoginPage } from '../login/login';
 
 /**
  * Generated class for the RegisterPage page.
@@ -21,16 +23,18 @@ export class RegisterPage {
     name:'',
     email:'',
     password:'',
-    phoneNumber:'',
-    address:'',
+   
   } 
+  
   email:string='';
   password:string='';
 
   itemList:AngularFireList<any>;
 
-  constructor( public db:AngularFireDatabase, public navCtrl: NavController,
-               public navParams: NavParams, public angularFireAuth:AngularFireAuth ) {
+  constructor(  public db: AngularFireDatabase, 
+                public navCtrl: NavController,
+                public navParams: NavParams, 
+                public angularFireAuth: AngularFireAuth ) {
                  this.itemList = this.db.list('Regsiter');
 
 
@@ -42,6 +46,7 @@ export class RegisterPage {
   
   // signup
   signup(){
+
     this.angularFireAuth.auth.createUserWithEmailAndPassword(this.email,this.password)
     .then(user =>{
       console.log(this.email,this.password);
@@ -53,13 +58,12 @@ export class RegisterPage {
       name:this.data.name,
       email:this.data.email,
       password:this.data.password,
-      phone:this.data.phoneNumber,
-      address:this.data.address,
+     
     });
-    this.navCtrl.setRoot('WelcomePage');
+    this.navCtrl.setRoot(HomePage);
+ }
 
-
-
-
+ login(){
+   this.navCtrl.setRoot(LoginPage);
  }
 }

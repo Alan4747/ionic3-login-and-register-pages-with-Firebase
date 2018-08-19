@@ -25677,3 +25677,142 @@ ion-navbar.toolbar {
   min-height: calc(46px + constant(safe-area-inset-bottom));
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
+
+page-login .card-background-page ion-card {
+  position: relative;
+  text-align: center;
+}
+
+page-login .myview {
+  display: block;
+  margin-left: auto;
+}
+
+page-login .inputs {
+  border-radius: 20px !important;
+  -webkit-text-decoration-color: #000000 !important;
+  text-decoration-color: #000000 !important;
+  background-color: #0e48106b;
+  height: 50px;
+  opacity: 0.7;
+  width: 90% !important;
+  margin-left: 5%;
+}
+
+page-login .ion-navbar {
+  color: black;
+  background-color: #0e48106b;
+}
+
+page-login .ion-button {
+  background-color: black;
+  color: #ffffff;
+  border-color: #ffffff;
+  height: 5.6rem;
+  width: 60px;
+}
+
+page-login .hizabutton {
+  width: 100% !important;
+  margin: auto;
+  display: block;
+  background-color: #0e48106b;
+  color: antiquewhite;
+  border-radius: 20px;
+  border-color: #154e17;
+}
+
+page-login .forgotpassword {
+  color: #154e17;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+page-login .forgettext {
+  background-color: #154e17;
+  border-radius: 20px;
+  height: 35px;
+}
+
+page-login .clickhere {
+  color: #000000;
+}
+
+page-login .logosetting {
+  margin-left: 30%;
+  opacity: 0.8;
+}
+
+page-login .topcolor {
+  background-color: #0e48106b;
+}
+
+page-register .card-background-page ion-card {
+  position: relative;
+  text-align: center;
+}
+
+.backgrnd {
+  background-image: src="assets/imgs/greenidea.jpg" !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.inputs {
+  border-radius: 20px !important;
+  -webkit-text-decoration-color: #000000 !important;
+  text-decoration-color: #000000 !important;
+  background-color: #0e48106b;
+  height: 50px;
+  opacity: 0.7;
+  width: 90% !important;
+  margin-left: 5%;
+}
+
+.ion-navbar {
+  color: black;
+  background-color: #0e48106b;
+}
+
+.ion-button {
+  background-color: black;
+  color: #ffffff;
+  border-color: #ffffff;
+  height: 5.6rem;
+  width: 60px;
+}
+
+.hizabutton {
+  width: 100% !important;
+  margin: auto;
+  display: block;
+  background-color: #0e48106b;
+  color: antiquewhite;
+  border-radius: 20px;
+  border-color: #154e17;
+}
+
+.forgotpassword {
+  color: #154e17;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.forgettext {
+  background-color: #154e17;
+  border-radius: 20px;
+  height: 35px;
+}
+
+.clickhere {
+  color: #000000;
+}
+
+.logosetting {
+  display: block;
+  margin-left: 30%;
+  opacity: 0.8;
+}

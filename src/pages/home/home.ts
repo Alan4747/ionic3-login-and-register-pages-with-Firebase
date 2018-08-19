@@ -11,11 +11,4 @@ export class HomePage {
 
   }
 
-  login(){
-    this.navCtrl.setRoot('LoginPage');
-  }
-  regsiter(){
-    this.navCtrl.setRoot('RegisterPage');
-  }
-
 }
